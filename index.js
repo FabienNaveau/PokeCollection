@@ -2,8 +2,8 @@ require('dotenv').config()
 
 const express = require('express')
 const sequelize = require('./app/database')
-const models = require('./app/models')
-require('express').Router()
+require('./app/models')
+const router = require('./app/router')
 
 const PORT = process.env.PORT || 3000
 
@@ -18,6 +18,6 @@ sequelize
     console.log(err);
   });
 
-app.get('/', (_, res) => res.send('Le serveur fonctionne bien'))
+app.use(router)
 
 app.listen(PORT, () => console.log(`App listening on ${PORT}`))
