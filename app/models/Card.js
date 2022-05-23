@@ -23,6 +23,11 @@ Card.init({
   image: {
       type: DataTypes.STRING,
       allowNull: false
+  },
+  owner: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false
   }
 }, {
   // Other model options go here

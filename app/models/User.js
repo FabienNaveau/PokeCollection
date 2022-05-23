@@ -26,7 +26,7 @@ User.init({
 }, {
   // Other model options go here
   sequelize, // We need to pass the connection instance
-  tableName: 'User' // We need to choose the model name
+  tableName: 'user' // We need to choose the model name
 });
 
 // the defined model is the class itself

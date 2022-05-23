@@ -28,6 +28,11 @@ Set.init({
   total: {
     type: DataTypes.INTEGER, 
     allowNull: false
+  },
+  owner: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false
   }
 }, {
   // Other model options go here
