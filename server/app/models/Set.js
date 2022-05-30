@@ -29,6 +29,14 @@ Set.init({
     type: DataTypes.INTEGER, 
     allowNull: false
   },
+  logo: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  symbol: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   owner: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
