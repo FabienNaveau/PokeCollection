@@ -6,13 +6,13 @@ import {
   Route,
 } from "react-router-dom";
 import './index.css';
-import LoginSignup from './App';
+import Home from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<LoginSignup />}>
+      <Route path="/" element={<Home />}>
       </Route>
     </Routes>
   </BrowserRouter>
